@@ -108,3 +108,5 @@ venv.bak/
 
 # pycharm
 .idea/
+MyThings.Root/MyThings/.DS_Store
+MyThings.Root/MyThings_Docs/.DS_Store
