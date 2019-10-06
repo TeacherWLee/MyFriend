@@ -110,3 +110,19 @@ venv.bak/
 .idea/
 
 MyThings.Root/MyThings/.DS_Store
+=======
+MyThings.Root/MyThings/.idea/
+/MyThings.Root/.idea
+
+# .��ͷ���κ��ļ�
+.*
+# �ų� .gitignore ����
+!/.gitignore
+/ios/MyThings/MyThings.xcodeproj/._project.xcworkspace
+/ios/MyThings/SQLiteDB/*.swift
+/ios/MyThings/SQLiteDB/*.DS_Store
+/ios/MyThings doc/*.DS_Store
+/MyThings.Root/MyThings/*.DS_Store
+/MyThings.Root/MyThings_Docs/*.DS_Store
+/MyThings.Root/MyThings_Docs/MyThings_Design/*.mdj
+
