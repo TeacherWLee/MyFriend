@@ -104,10 +104,12 @@ venv.bak/
 .mypy_cache/
 
 
-# .开头的任何文件
-.*
-# 排除 .gitignore 本身
-!/.gitignore
 
-# pycharm
+# Pycharm idea folder
 /MyThings.Root/.idea
+
+
+# all file start with "."
+.*
+# but not .gitignore file
+!/.gitignore
