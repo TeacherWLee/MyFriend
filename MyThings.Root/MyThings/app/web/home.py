@@ -10,6 +10,6 @@ from . import web
 __author__ = "Li Wei (liw@sicnu.edu.cn)"
 
 
-@web.route("/")
+@web.route("/hello")
 def home():
     return render_template("index.html")
