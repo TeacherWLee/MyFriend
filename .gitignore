@@ -111,5 +111,7 @@ venv.bak/
 
 # all file start with "."
 .*
-# but not .gitignore file
+# but not fellow files .gitignore file
 !/.gitignore
+!/.flaskenv
+
