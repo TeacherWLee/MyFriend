@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    MyThings - {{ title }}
+{% endblock %}
+{% block header %}
+    {{ title }}
+{% endblock %}
+
+{% block toolbar %}
+
+{% endblock %}
+
+{% block container %}
+<div id="detail_container">
+<div id="detail_image">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577445190019&di=1617e68856b931ead8436f2c2af90854&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171101%2Fab8c0fd48bf94be889cd393cfe4ec9e0.jpeg">
+    <div id="image_tool">上一张、下一张</div>
+</div>
+
+<div id="detail_cell_table">
+    {% for i in range(0, 20) %}
+    <div id="detail_cell">
+        名称：李巍衣服
+    </div>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}

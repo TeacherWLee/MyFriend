@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+ *	version:1.0
+ *	auther: liwei
+ *	email:autumnal_mood@163.com
+ *	website:localhost
+ *	date:2019-12
+ */
+
+/* =general
+--------------------------------  */
+body {
+    font-family: "Arial";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3160B6;
+}
+
+/* =Layout
+-------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/* =page_main
+-------------------------------- */
+#page_main {
+    width: 1100px;
+    margin: 0 auto;
+    /*height: 900px;*/
+}
+
+/* =header
+-------------------------------- */
+#page_header {
+    width: 100%;
+	height: 60px;
+    text-align: center;
+}
+
+#header_title {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: cadetblue;
+}
+
+/* =nav
+-------------------------------- */
+#page_nav {
+    width: 100%;
+    height: 40px;
+    border-top: #357bd8 solid 2px;
+    border-bottom: #357bd8 solid 2px;
+}
+
+#nav_container {
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#nav_item {
+    width: 200px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+/* =toolbar
+-------------------------------- */
+#page_toolbar {
+    width: 100%;
+    height: 30px;
+    background-color: #ebebeb;
+}
+
+#toolbar_container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* =footer
+-------------------------------- */
+#page_footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-top: #357bd8 solid 1px;
+    padding-top: 10px;
+}
+
+/* =container
+-------------------------------- */
+#container {
+    width: 1100px;
+}
+
+/* =cell_table
+-------------------------------- */
+#cell_table {
+    width: 1100px;
+    height: 750px;
+    margin-bottom: 2px;
+}
+
+#cell {
+    width: 498px;
+    height: 126px;
+    padding: 10px 20px;
+    margin: 2px 5px 0px 5px;
+    border: 1px solid #eeeeee;
+    float: left;
+}
+
+#cell img {
+    width: 126px;
+    height: 126px;
+    border-radius: 20px;
+    float: left;
+}
+
+#cell h1 {
+    width: 352px;
+    height: 36px;
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+#cell p {
+    margin-left: 20px;
+    width: 352px;
+    color: #636363;
+    float: left;
+    height: 27px;
+    padding-top: 3px;
+}
+
+#cell #p_alert {
+    margin-left: 20px;
+    width: 352px;
+    color: #636363;
+    float: left;
+    height: 26px;
+    padding-top: 4px;
+    font-size: 15px;
+    color: firebrick;
+    text-align: right;
+}
+
+/* =item_detail
+-------------------------------- */
+#detail_container {
+    width: 1100px;
+    height: 1100px;
+    /*background-color: #3160B6;*/
+}
+
+#detail_image {
+    width: 1100px;
+    height: 555px;
+    /*background-color: green;*/
+    padding-top: 20px;
+    border-bottom: #357bd8 1px solid;
+}
+
+#detail_image img {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+
+#detail_image #image_tool {
+    width: 100%;
+    height: 30px;
+    /*background-color: #eeeeee;*/
+    margin-top: 5px;
+    text-align: center;
+}
+
+#detail_cell_table {
+    width: 1100px;
+    height: 750px;
+    margin-bottom: 2px;
+}
+
+#detail_cell {
+    width: 520px;
+    height: 30px;
+    padding: 10px 10px;
+    margin: 2px 5px 0px 5px;
+    /*border: 1px solid #eeeeee;*/
+    float: left;
+    font-size: 20px;
+    /*background-color: #999999;*/
+}

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    MyThings - {{ title }}
+{% endblock %}
+{% block header %}
+    {{ title }}
+{% endblock %}
+
+{% block toolbar %}
+    {% set pre_page = page|int - 1 %}
+    {% if pre_page >= 0 %}
+        <a href="{{ url_for(endpoint, p_id=p_id, page=pre_page) }}">上一页</a>
+    {% endif %}
+
+    {{ page|int + 1 }} / {{ max_page }}
+
+    {% set next_page = page|int + 1 %}
+    {% if next_page < max_page|int %}
+        <a href="{{ url_for(endpoint, p_id=p_id, page=next_page) }}">下一页</a>
+    {% endif %}
+{% endblock %}
+
+{% block container %}
+    <div id="cell_table">
+        {% for cell in list_cell %}
+            <div id="cell">
+                {% set file_name = 'upload/thing_imgs/'~cell["image_src"] %}
+                <a href="{{ url_for(cell["endpoint"], p_id=cell["id"], page=0) }}">
+                <img src="{{ url_for('static', filename=file_name ) }}">
+                <h1>{{ cell["name"] }}</h1>
+                </a>
+                <p>{{ cell["detail"] }}</p>
+                <p>{{ cell["type"] }}</p>
+                <div id="p_alert">
+                    {{ cell["alert"] }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

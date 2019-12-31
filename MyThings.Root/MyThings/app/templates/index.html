@@ -1,4 +1,24 @@
-MyThings
+{% extends "layout.html" %}
 
+{% block title %}
+    MyThings - 首页
+{% endblock %}
+{% block header %}
+    MyThings
+{% endblock %}
 
+{% block toolbar %}
 
+{% endblock %}
+
+{% block container %}
+    <a href="{{ url_for('web.category_collection_list', p_id=-1, page=0) }}">
+        <p>所有分类组</p>
+    </a>
+    <a href="{{ url_for('web.category_list', p_id=-1, page=0) }}">
+        <p>所有分类</p>
+    </a>
+    <a href="{{ url_for('web.thing_list', p_id=-1, page=0) }}">
+        <p>所有物品</p>
+    </a>
+{% endblock %}

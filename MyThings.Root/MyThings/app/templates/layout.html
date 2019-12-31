@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='web/css/layout.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+
+<div id="page_main">
+    <div id="page_header">
+        <div id="header_title">
+            {% block header %}{% endblock %}
+        </div>
+    </div>
+
+    <div id="page_nav">
+        <div id="nav_container">
+            <div id="nav_item"><a href="{{ url_for("web.index") }}">首页</a></div>
+            <div id="nav_item">所有分类</div>
+            <div id="nav_item">所有物品</div>
+            <div id="nav_item">所有位置</div>
+            <div id="nav_item">设置</div>
+        </div>
+    </div>
+
+    <div id="page_toolbar">
+        <div id="toolbar_container">
+            {% block toolbar %}{% endblock %}
+        </div>
+    </div>
+
+    <div id="container">
+        {% block container %}{% endblock %}
+    </div>
+
+    <div id="page_footer">
+        Copyright@ 2019 liwei
+    </div>
+</div>
+
+</body>
+</html>
